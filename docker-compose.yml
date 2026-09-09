@@ -1,0 +1,6 @@
+services:
+sanitizer: {build: ./services/sanitizer, ports: ["8001:8000"]}
+llm-inference: {build: ./services/llm-inference, ports: ["8002:8000"]}
+enrichment: {build: ./services/enrichment, ports: ["8003:8000"]}
+reporting: {build: ./services/reporting, ports: ["8004:8000"]}
+dashboard: {build: ./services/dashboard, ports: ["8080:8000"]}
